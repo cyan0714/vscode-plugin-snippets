@@ -1,9 +1,0 @@
-{
-  "Print to console": {
-    "prefix": "json",
-    "body": [
-      "console.log(JSON.parse(JSON.stringify($1)))"
-    ],
-    "description": "log output to JSON console"
-  }
-}

@@ -1,0 +1,169 @@
+
+// single-row-ellipsis(sre)
+{
+  "single-row-ellipsis": {
+    "prefix": "sre",
+    "body": [
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "white-space: nowrap;"
+    ],
+    "description": ""
+  }
+}
+
+// double-row-ellipsis(dre)
+{
+  "double-row-ellipsis": {
+    "prefix": "dre",
+    "body": [
+      "display: -webkit-box;",
+      "word-break: break-all;",
+      "-webkit-box-orient: vertical;",
+      "-webkit-line-clamp: 2;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;"
+    ],
+    "description": ""
+  }
+}
+
+// flex(fl)
+{
+  "flex": {
+    "prefix": "fl",
+    "body": [
+      "display: flex;"
+    ],
+    "description": ""
+  },
+}
+
+// flex-xy-center(fcc)
+{
+  "flex-xy-center": {
+    "prefix": "fcc",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;"
+    ],
+    "description": ""
+  }
+}
+
+// flex-x-center(fx)
+{
+  "flex-x-center": {
+    "prefix": "fx",
+    "body": [
+      "display: flex;",
+      "justify-content: center;"
+    ],
+    "description": ""
+  }
+}
+
+// flex-y-center(fy)
+{
+  "flex-y-center": {
+    "prefix": "fy",
+    "body": [
+      "display: flex;",
+      "align-items: center;"
+    ],
+    "description": ""
+  }
+}
+
+// flex-between(fb)
+{
+  "flex-between": {
+    "prefix": "fb",
+    "body": [
+      "display: flex;",
+      "justify-content: space-between;",
+      "align-items: center;"
+    ],
+    "description": ""
+  }
+}
+
+// absolute-center-center(acc)
+{
+  "absolute-center-center": {
+    "prefix": "acc",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%, -50%);"
+    ]
+  }
+}
+
+// hide-scrollbar(hide-scrollbar)
+{
+  "hide-scrollbar": {
+    "prefix": "hide-scrollbar",
+    "body": [
+      "&::-webkit-scrollbar: {",
+        "display: none",
+      "}"
+    ]
+  }
+}
+
+// scrollbar(scrollbar)
+{
+  "scrollbar": {
+    "prefix": "scrollbar",
+    "body": [
+      "&::-webkit-scrollbar {",
+        "width: 8px;",
+        "height: 8px;",
+        "background-color: transparent;"
+      "}",
+      "&::-webkit-scrollbar-track-piece {",
+        "background-color: transparent;",
+      "}",
+      "&::-webkit-scrollbar-thumb {",
+        "border-radius: 5px;"
+        "background: #888;",
+      "}"
+    ]
+  }
+}
+
+// shadow(shadow)
+{
+  "shadow": {
+    "prefix": "shadow",
+    "body": [
+      "box-shadow: 0 3px 6px rgba(140,149,159,0.15);"
+    ],
+    "description": "shadow of github"
+  }
+}
+
+// border(border)
+{
+  "border": {
+    "prefix": "border",
+    "body": [
+      "border: 1px solid #d0d7de;"
+    ],
+    "description": "default border"
+  }
+}
+
+// border-radius(rad)
+{
+  "border-radius": {
+    "prefix": "rad",
+    "body": [
+      "border-radius: 8px;"
+    ],
+    "description": "default border-radius"
+  },
+}
