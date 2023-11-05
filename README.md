@@ -9,4 +9,4 @@ node version: >= 18.15.0
 2. npm install @vscode/vsce -g
 3. excute `vsce package` in terminal, it will generate *.vsix in project
 4. import the *.vsix to vscode  
-![flow]([./imgs/flow.png](https://github.com/cyan0714/vscode-plugin-snippets/blob/master/imgs/flow.png?raw=true))
+![flow](https://github.com/cyan0714/vscode-plugin-snippets/blob/master/imgs/flow.png?raw=true)
