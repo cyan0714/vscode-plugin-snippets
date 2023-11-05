@@ -1,4 +1,3 @@
-// el-button-danger(ebd)
 {
   "el-button-danger": {
     "prefix": "ebd",
@@ -6,66 +5,48 @@
       "<el-button type=\"danger\">$1</el-button>"
     ],
     "description": ""
-  }
-}
-
-// el-button-warning(ebw)
-{
+  },
+  
   "el-button-warning": {
     "prefix": "ebw",
     "body": [
       "<el-button type=\"warning\">$1</el-button>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-button-success(ebs)
-{
   "el-button-success": {
     "prefix": "ebs",
     "body": [
       "<el-button type=\"success\">$1</el-button>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-button-info(ebi)
-{
   "el-button-info": {
     "prefix": "ebi",
     "body": [
       "<el-button type=\"info\">$1</el-button>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-button-primary(ebp)
-{
   "el-button-primary": {
     "prefix": "ebp",
     "body": [
       "<el-button type=\"primary\">$1</el-button>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-checkbox(ec)
-{
   "el-checkbox": {
     "prefix": "ec",
     "body": [
       "<el-checkbox v-model=\"checked\">备选项</el-checkbox>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-confirm(ec)
-{
   "el-confirm": {
     "prefix": "ec",
     "body": [
@@ -83,11 +64,8 @@
       "});"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-date-picker(edp)
-{
   "el-date-picker": {
     "prefix": "edp",
     "body": [
@@ -101,11 +79,8 @@
       "</el-date-picker>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-descriptions(edesc)
-{
   "el-descriptions": {
     "prefix": "edesc",
     "body": [
@@ -117,11 +92,8 @@
       "</el-descriptions>"
     ],
     "description": ""
-  }
-}
+  },
 
-// el-dialog(ed)
-{
   "el-dialog": {
     "prefix": "ed",
     "body": [
@@ -139,11 +111,8 @@
       "</el-dialog>"
     ],
     "description": ""
-  }
-}
+  },
 
-// element-form-table-template(eftt)
-{
   "element-form-table-template": {
     "prefix": "eftt",
     "body": [
@@ -241,11 +210,8 @@
       "</style>"
     ],
     "description": ""
-  }
-}
+  },
 
-// handleConfirm(handleConfirm)
-{
   "handleCommonConfirm": {
     "prefix": "handleConfirm",
     "body": [
@@ -270,21 +236,16 @@
       "        "
     ],
     "description": "handleCommonConfirm"
-  }
-}
+  },
 
-// el-input(ei)
-{
   "el-input": {
     "prefix": "ei",
     "body": [
       "<el-input v-model=\"input\" placeholder=\"请输入内容\"></el-input>"
     ],
     "description": ""
-  }
-}
+  },
 
-{
   "el-message-error": {
     "prefix": "eme",
     "body": [
@@ -292,9 +253,7 @@
     ],
     "description": ""
   },
-}
 
-{
   "el-message-warning": {
     "prefix": "emw",
     "body": [
@@ -302,29 +261,23 @@
     ],
     "description": ""
   },
-}
 
-{
   "el-message-success": {
     "prefix": "ems",
     "body": [
       "this.$$message.success('操作成功！')"
     ],
     "description": ""
-  }
-}
+  },
 
-{
   "el-radio": {
     "prefix": "er",
     "body": [
       "<el-radio v-model=\"radio\" label=\"1\">备选项</el-radio>"
     ],
     "description": ""
-  }
-}
+  },
 
-{
   "el-select-options-data": {
     "prefix": "eso",
     "body": [
@@ -344,10 +297,8 @@
       "],"
     ],
     "description": ""
-  }
-}
+  },
 
-{
   "el-select": {
     "prefix": "es",
     "body": [
@@ -361,10 +312,8 @@
       "  </el-select>"
     ],
     "description": ""
-  }
-}
+  },
 
-{
   "el-validate": {
     "prefix": "ev",
     "body": [

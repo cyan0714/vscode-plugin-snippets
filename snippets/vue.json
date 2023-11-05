@@ -1,4 +1,3 @@
-// bind-img-dynamic(dimg)
 {
   "bind img dynamic": {
     "prefix": "dimg",
@@ -6,11 +5,8 @@
       "<img :src=\"require(`@/imgs/${$1}`)\" alt=\"\">"
     ],
     "description": "bind img dynamic"
-  }
-}
+  },
 
-// bind-background-style-dynamic(dbgs)
-{
   "backgroundStyle": {
     "prefix": "dbgs",
     "body": [
@@ -23,12 +19,9 @@
       "},"
     ],
     "description": "bind background style dynamically"
-  }
-}
+  },
 
-// vue-template(vue)
-{
-  "Print to console": {
+  "vue-template": {
     "prefix": "vue",
     "body": [
       "<template>",
@@ -57,11 +50,8 @@
       ""
     ],
     "description": "a vue options template"
-  }
-}
+  },
 
-// v-for in list(vfor)
-{
   "v-for in list": {
     "prefix": "vfor",
     "body": [
@@ -74,3 +64,4 @@
     "description": "v-for in list"
   }
 }
+

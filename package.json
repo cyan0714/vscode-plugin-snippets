@@ -2,7 +2,7 @@
   "name": "shiyan-snippets",
   "displayName": "Shiyan Snippets",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -12,8 +12,53 @@
   "contributes": {
     "snippets": [
       {
+        "language": "css",
+        "path": "./snippets/css.json"
+      },
+
+      {
         "language": "javascript",
-        "path": "./snippets/javascript.code-snippets"
+        "path": "./snippets/javascript.json"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "js",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      },
+     
+      {
+        "language": "html",
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "js",
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/avue.json"
+      },
+
+      
+      {
+        "language": "html",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "js",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/element-ui.json"
       }
     ]
   }

@@ -1,4 +1,3 @@
-// avue-crud-withpage.json(avue)
 {
   "avue-crud-withpage": {
     "prefix": "avue",
@@ -114,11 +113,7 @@
       ""
     ],
     "description": "generate avue-crud-withpage template"
-  }
-}
-
-// avue-form-crud-withpage.json(avue)
-{
+  },
   "avue-form-crud-withpage": {
     "prefix": "avue",
     "body": [
@@ -288,11 +283,7 @@
       ""
     ],
     "description": ""
-  }
-}
-
-// avue-radio.json
-{
+  },
   "avue-radio": {
     "prefix": "avue-radio",
     "body": [
@@ -317,3 +308,7 @@
     "description": "avue-radio"
   }
 }
+
+
+
+
