@@ -306,9 +306,37 @@
       "},"
     ],
     "description": "avue-radio"
+  },
+  "avue-dict": {
+    "prefix": "avue",
+    "body": [
+      "{",
+      "  label: '$1',",
+      "  prop: '$2',",
+      "  type: 'select',",
+      "  dicUrl: '/api/blade-system/dict-biz/dictionary?code=$2',",
+      "  props: {",
+      "    label: 'dictValue',",
+      "    value: 'dictKey',",
+      "  },",
+      "}"
+    ],
+    "description": "avue-dict"
+  },
+  "avue-date": {
+    "prefix": "avue",
+    "body": [
+      "{",
+      "  label: '验房时间',",
+      "  type: 'date',",
+      "  prop: 'inspectionDate',",
+      "  value: 'yyyy-MM-dd',",
+      "  valueFormat: 'yyyy-MM-dd',",
+      "}"
+    ],
+    "description": "avue-date"
   }
 }
-
 
 
 
