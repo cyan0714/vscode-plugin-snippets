@@ -703,6 +703,16 @@
     "description": "generate avue-diy-edit-view template"
   },
 
+  "avue-slot-status": {
+    "prefix": "ass",
+    "body": [
+      "<template slot=\"status\" slot-scope=\"{ row }\">",
+      "  <el-switch v-model=\"row.status\" active-color=\"#409EFF\" :active-value=\"0\" :inactive-value=\"1\" @change=\"changeStatus(row, row.status)\"/>",
+      "</template>"
+    ],
+    "description": "generate avue-slot-status template"
+  },
+
   "avue-radio": {
     "prefix": "ar",
     "body": [
@@ -811,8 +821,28 @@
     "description": "generate avue-attachment snippet"
   },
 
-  "avue-crud": {
-    "prefix": "ac",
+  "avue-change-status-method": {
+    "prefix": "acs",
+    "body": [
+      "changeStatus(row) {",
+      "  let params = {",
+      "      id: row.id,",
+      "      status: row.status",
+      "  }",
+      "  this.$confirm('确认要执行此操作吗？').then(() => {",
+      "      return setStatus(params);",
+      "  }).then(() => {",
+      "      this.$message.success(\"操作成功\");",
+      "  }).catch(() => {",
+      "      row.status = row.status === 0 ? 1 : 0;",
+      "  });",
+      "},"
+    ],
+    "description": "generate changeStatus method"
+  },
+
+  "avue-crud-api": {
+    "prefix": "aca",
     "body": [
       "import request from '@/router/axios';",
       "",
