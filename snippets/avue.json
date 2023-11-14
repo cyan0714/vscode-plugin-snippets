@@ -761,7 +761,7 @@
       "  label: '验房时间',",
       "  type: 'date',",
       "  prop: 'inspectionDate',",
-      "  value: 'yyyy-MM-dd',",
+      "  format: 'yyyy-MM-dd',",
       "  valueFormat: 'yyyy-MM-dd',",
       "}"
     ],
