@@ -66,6 +66,49 @@
     "description": ""
   },
 
+  "el-confirm-cancel": {
+    "prefix": "ecc",
+    "body": [
+      "this.$confirm(`是否审核通过?`, '提示', {",
+      "  confirmButtonText: '通过',",
+      "  cancelButtonText: '不通过',",
+      "  distinguishCancelAndClose: true,",
+      "  type: 'warning',",
+      "})",
+      "  .then(() => {",
+      "    approve({",
+      "      id: row.id,",
+      "      status: 1,",
+      "    }).then(res => {",
+      "      if (res.data.code == 200) {",
+      "        this.$message({",
+      "          type: 'success',",
+      "          message: `操作成功!`,",
+      "        });",
+      "        this.onLoad(this.page);",
+      "      }",
+      "    });",
+      "  })",
+      "  .catch((action) => {",
+      "    if (action === 'cancel') {",
+      "      approve({",
+      "        id: row.id,",
+      "        status: 2,",
+      "      }).then(res => {",
+      "        if (res.data.code == 200) {",
+      "          this.$message({",
+      "            type: 'success',",
+      "            message: `操作成功!`,",
+      "          });",
+      "          this.onLoad(this.page);",
+      "        }",
+      "      });",
+      "    }",
+      "  });"
+    ],
+    "description": ""
+  },
+
   "el-date-picker": {
     "prefix": "edp",
     "body": [
