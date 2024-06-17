@@ -61,6 +61,19 @@
       {
         "language": "vue",
         "path": "./snippets/element-ui.json"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/szhn.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/szhn.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/szhn.json"
       }
     ]
   }

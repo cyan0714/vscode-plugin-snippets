@@ -1,0 +1,64 @@
+{
+  "el-date-picker-datetime-options": {
+    "prefix": "oedp",
+    "body": [
+      "{",
+      "  type: 'el-date-picker',",
+      "  label: '调用时间',",
+      "  prop: 'invoke',",
+      "  elOptions: {",
+      "    type: 'datetime',",
+      "    prefixIcon: 'el-icon-time',",
+      "    format: 'yyyy-MM-dd HH:mm',",
+      "    valueFormat: 'yyyy-MM-dd HH:mm'",
+      "  },",
+      "},"
+    ],
+    "description": "el-date-picker-datetime-options"
+  },
+  "el-select-options": {
+    "prefix": "oes",
+    "body": [
+      "{",
+      "  type: 'el-select',",
+      "  label: '调用成功率',",
+      "  prop: 'successRate',",
+      "  subItems: [",
+      "    {",
+      "      subType: 'el-option',",
+      "      value: '1',",
+      "      label: '高于80%',",
+      "      text: '高于80%'",
+      "    },",
+      "    {",
+      "      subType: 'el-option',",
+      "      value: '2',",
+      "      label: '低于80%',",
+      "      text: '低于80%'",
+      "    },",
+      "  ]",
+      "},"
+    ],
+    "description": "el-select-options"
+  },
+  "el-date-picker-datetimerange-options": {
+    "prefix": "oedpr",
+    "body": [
+      "{",
+      "  type: 'el-date-picker',",
+      "  label: '发起时间',",
+      "  elOptions: {",
+      "    type: 'datetimerange',",
+      "    rangeSeparator: '至',",
+      "    startPlaceholder: '开始时间',",
+      "    endPlaceholder: '结束时间',",
+      "    prefixIcon: 'el-icon-time',",
+      "    format: 'yyyy-MM-dd HH:mm',",
+      "    valueFormat: 'yyyy-MM-dd HH:mm'",
+      "  },",
+      "  prop: 'taskTime'",
+      "},"
+    ],
+    "description": "el-date-picker-datetimerange-options"
+  }
+}
