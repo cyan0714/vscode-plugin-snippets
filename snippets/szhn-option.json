@@ -1,6 +1,6 @@
 {
   "el-date-picker-datetime-options": {
-    "prefix": "oedp",
+    "prefix": "sedp",
     "body": [
       "{",
       "  type: 'el-date-picker',",
@@ -17,7 +17,7 @@
     "description": "el-date-picker-datetime-options"
   },
   "el-select-options": {
-    "prefix": "oes",
+    "prefix": "ses",
     "body": [
       "{",
       "  type: 'el-select',",
@@ -42,7 +42,7 @@
     "description": "el-select-options"
   },
   "el-date-picker-datetimerange-options": {
-    "prefix": "oedpr",
+    "prefix": "sedpr",
     "body": [
       "{",
       "  type: 'el-date-picker',",

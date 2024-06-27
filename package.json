@@ -65,15 +65,15 @@
 
       {
         "language": "html",
-        "path": "./snippets/szhn.json"
+        "path": "./snippets/szhn-option.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/szhn.json"
+        "path": "./snippets/szhn-option.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/szhn.json"
+        "path": "./snippets/szhn-option.json"
       }
     ]
   }
