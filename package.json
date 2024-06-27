@@ -2,7 +2,7 @@
   "name": "shiyan-snippets",
   "displayName": "Shiyan Snippets",
   "description": "",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -74,6 +74,19 @@
       {
         "language": "vue",
         "path": "./snippets/szhn-option.json"
+      },
+
+      {
+        "language": "html",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/szhn-page.json"
       }
     ]
   }
