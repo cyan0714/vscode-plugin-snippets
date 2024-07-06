@@ -1,5 +1,5 @@
 {
-  "table-page": {
+  "szhn-table-page": {
     "prefix": "stp",
     "body": [
       "<template>",
@@ -151,9 +151,9 @@
       "",
       ""
     ],
-    "description": ""
+    "description": "szhn-table-page"
   },
-  "table-page-dialog": {
+  "szhn-table-page-dialog": {
     "prefix": "stpd",
     "body": [
       "<template>",
@@ -379,6 +379,6 @@
       "</style>",
       ""
     ],
-    "description": "table-page-dialog"
+    "description": "szhn-table-page-dialog"
   } 
 }

@@ -1,6 +1,6 @@
 {
-  "el-date-picker-datetime-options": {
-    "prefix": "sedp",
+  "szhn-date-picker-datetime": {
+    "prefix": "sdpd",
     "body": [
       "{",
       "  type: 'el-date-picker',",
@@ -14,10 +14,32 @@
       "  },",
       "},"
     ],
-    "description": "el-date-picker-datetime-options"
+    "description": "szhz-date-picker-datetime-config"
   },
-  "el-select-options": {
-    "prefix": "ses",
+  
+  "szhn-date-picker-datetimerange": {
+    "prefix": "sdpd",
+    "body": [
+      "{",
+      "  type: 'el-date-picker',",
+      "  label: '发起时间',",
+      "  elOptions: {",
+      "    type: 'datetimerange',",
+      "    rangeSeparator: '至',",
+      "    startPlaceholder: '开始时间',",
+      "    endPlaceholder: '结束时间',",
+      "    prefixIcon: 'el-icon-time',",
+      "    format: 'yyyy-MM-dd HH:mm',",
+      "    valueFormat: 'yyyy-MM-dd HH:mm'",
+      "  },",
+      "  prop: 'taskTime'",
+      "},"
+    ],
+    "description": "szhn-date-picker-datetimerange-config"
+  },
+
+  "szhn-select": {
+    "prefix": "ss",
     "body": [
       "{",
       "  type: 'el-select',",
@@ -39,26 +61,33 @@
       "  ]",
       "},"
     ],
-    "description": "el-select-options"
+    "description": "szhn-select-config"
   },
-  "el-date-picker-datetimerange-options": {
-    "prefix": "sedpr",
+
+  "szhn-radio-group": {
+    "prefix": "srg",
     "body": [
       "{",
-      "  type: 'el-date-picker',",
-      "  label: '发起时间',",
-      "  elOptions: {",
-      "    type: 'datetimerange',",
-      "    rangeSeparator: '至',",
-      "    startPlaceholder: '开始时间',",
-      "    endPlaceholder: '结束时间',",
-      "    prefixIcon: 'el-icon-time',",
-      "    format: 'yyyy-MM-dd HH:mm',",
-      "    valueFormat: 'yyyy-MM-dd HH:mm'",
-      "  },",
-      "  prop: 'taskTime'",
-      "},"
+      "  type: 'el-radio-group',",
+      "  label: '是否开启根据调用AK进行分组',",
+      "  prop: 'enableAceessKeyGroup',",
+      "  defaultValue: true,",
+      "  subItems: [",
+      "    {",
+      "      subType: 'el-radio',",
+      "      prop: 'true',",
+      "      label: true,",
+      "      text: '是'",
+      "    },",
+      "    {",
+      "      subType: 'el-radio',",
+      "      prop: 'false',",
+      "      label: false,",
+      "      text: '否'",
+      "    }",
+      "  ]",
+      "}"
     ],
-    "description": "el-date-picker-datetimerange-options"
+    "description": "szhn-radio-group-config"
   }
 }
