@@ -125,7 +125,7 @@
   },
 
   "el-descriptions": {
-    "prefix": "edesc",
+    "prefix": "ed",
     "body": [
       "<el-descriptions :column=\"1\">",
       "    <el-descriptions-item label=\"用户名\">kooriookami</el-descriptions-item>",
@@ -255,10 +255,10 @@
     "description": ""
   },
 
-  "handleCommonConfirm": {
-    "prefix": "handleConfirm",
+  "el-confirm-fn": {
+    "prefix": "ecf",
     "body": [
-      "handleCommonConfirm(operation, api, id) {",
+      "handleConfirm(operation, api, id) {",
       "  this.$confirm(`是否确认${ operation || '' }?`, '提示', {",
       "    confirmButtonText: '确定',",
       "    cancelButtonText: '取消',",
@@ -278,7 +278,7 @@
       "},",
       "        "
     ],
-    "description": "handleCommonConfirm"
+    "description": "el-handle-confirm-fn"
   },
 
   "el-input": {
@@ -321,7 +321,22 @@
     "description": ""
   },
 
-  "el-select-options-data": {
+  "el-select": {
+    "prefix": "es",
+    "body": [
+      "  <el-select v-model=\"value\" placeholder=\"请选择\">",
+      "    <el-option",
+      "      v-for=\"item in options\"",
+      "      :key=\"item.value\"",
+      "      :label=\"item.label\"",
+      "      :value=\"item.value\">",
+      "    </el-option>",
+      "  </el-select>"
+    ],
+    "description": ""
+  },
+
+  "el-select-options": {
     "prefix": "eso",
     "body": [
       "options: [",
@@ -338,21 +353,6 @@
       "    label: '蚵仔煎'",
       "  },",
       "],"
-    ],
-    "description": ""
-  },
-
-  "el-select": {
-    "prefix": "es",
-    "body": [
-      "  <el-select v-model=\"value\" placeholder=\"请选择\">",
-      "    <el-option",
-      "      v-for=\"item in options\"",
-      "      :key=\"item.value\"",
-      "      :label=\"item.label\"",
-      "      :value=\"item.value\">",
-      "    </el-option>",
-      "  </el-select>"
     ],
     "description": ""
   },

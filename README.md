@@ -1,70 +1,68 @@
 # Shiyan Snippets
 
 ## Require
+
 vscode version: >= 1.84.0  
 node version: >= 18.15.0
 
 ## How to import vscode?
 
 ### Method 1
+
 1. git clone https://github.com/cyan0714/vscode-plugin-snippets.git
 2. npm install @vscode/vsce -g
-3. excute `vsce package` in terminal, it will generate *.vsix in project
-4. import the *.vsix to vscode  
-![flow](https://github.com/cyan0714/vscode-plugin-snippets/blob/master/imgs/flow.png?raw=true)
+3. excute `vsce package` in terminal, it will generate \*.vsix in project
+4. import the \*.vsix to vscode  
+   ![flow](https://github.com/cyan0714/vscode-plugin-snippets/blob/master/imgs/flow.png?raw=true)
 
 ### Method 2
-1. download the *.vsix to your computer
-2. import the *.vsix to vscode directly  
-![flow](https://github.com/cyan0714/vscode-plugin-snippets/blob/master/imgs/flow.png?raw=true)
+
+1. download the \*.vsix to your computer
+2. import the \*.vsix to vscode directly  
+   ![flow](https://github.com/cyan0714/vscode-plugin-snippets/blob/master/imgs/flow.png?raw=true)
 
 ## All Snippets
 
 ### JavaScript
 
 #### console2json(json)
+
 ```json
 {
   "Print to console": {
     "prefix": "json",
-    "body": [
-      "console.log(JSON.parse(JSON.stringify($1)))"
-    ],
+    "body": ["console.log(JSON.parse(JSON.stringify($1)))"],
     "description": "log output to JSON console"
   }
 }
 ```
 
 #### fn(fn)
+
 ```json
 {
   "generate enhanced function": {
     "prefix": "fn",
-    "body": [
-      "$1($2) {",
-      "  $3",
-      "},"
-    ],
+    "body": ["$1($2) {", "  $3", "},"],
     "description": "generate enhanced function"
   }
 }
 ```
 
 #### import-api(api)
+
 ```json
 {
-	"Import Api": {
-		"prefix": "api",
-		"body": [
-			"import {$1} from '@/api/$2';"
-		],
-		"description": "import api"
-	}
+  "Import Api": {
+    "prefix": "api",
+    "body": ["import {$1} from '@/api/$2';"],
+    "description": "import api"
+  }
 }
 ```
 
-
 #### import-component(cpn)
+
 ```json
 {
   "Import Component": {
@@ -315,6 +313,7 @@ node version: >= 18.15.0
 ### AVUE
 
 #### avue-crud-page
+
 ```json
 {
   "avue-crud-page": {
@@ -486,6 +485,7 @@ node version: >= 18.15.0
 ```
 
 #### avue-form-crud-page
+
 ```json
 {
   "avue-form-crud-page": {
@@ -657,11 +657,12 @@ node version: >= 18.15.0
       ""
     ],
     "description": "generate avue-form-crud-with-page template"
-  },
+  }
 }
 ```
 
 #### avue-edit-page
+
 ```json
 {
   "avue-edit-page": {
@@ -1029,11 +1030,12 @@ node version: >= 18.15.0
       ""
     ],
     "description": "generate avue-diy-edit-view template"
-  },
+  }
 }
 ```
 
 #### avue-slot-status
+
 ```json
 {
   "avue-slot-status": {
@@ -1044,11 +1046,12 @@ node version: >= 18.15.0
       "</template>"
     ],
     "description": "generate avue-slot-status template"
-  },
+  }
 }
 ```
 
 #### avue-radio
+
 ```json
 {
   "avue-radio": {
@@ -1073,11 +1076,12 @@ node version: >= 18.15.0
       "},"
     ],
     "description": "generate avue-radio snippet"
-  },
+  }
 }
 ```
 
 #### avue-dict
+
 ```json
 {
   "avue-dict": {
@@ -1095,11 +1099,12 @@ node version: >= 18.15.0
       "}"
     ],
     "description": "generate avue-dict snippet"
-  },
+  }
 }
 ```
 
 #### avue-date
+
 ```json
 {
   "avue-date": {
@@ -1114,11 +1119,12 @@ node version: >= 18.15.0
       "}"
     ],
     "description": "generate avue-date snippet"
-  },
+  }
 }
 ```
 
 #### avue-slot-menuLeft
+
 ```json
 {
   "avue-slot-menuLeft": {
@@ -1136,11 +1142,12 @@ node version: >= 18.15.0
       "</template>"
     ],
     "description": "generate avue-slot-menuLeft template"
-  },
+  }
 }
 ```
 
 #### avue-slot-menu
+
 ```json
 {
   "avue-slot-menu": {
@@ -1153,11 +1160,12 @@ node version: >= 18.15.0
       "</template>"
     ],
     "description": "generate avue-slot-menu template"
-  },
+  }
 }
 ```
 
 #### avue-attachment
+
 ```json
 {
   "avue-attachment": {
@@ -1182,11 +1190,12 @@ node version: >= 18.15.0
       "},"
     ],
     "description": "generate avue-attachment snippet"
-  },
+  }
 }
 ```
 
 #### avue-change-status
+
 ```json
 {
   "avue-change-status": {
@@ -1207,11 +1216,12 @@ node version: >= 18.15.0
       "},"
     ],
     "description": "generate changeStatus method"
-  },
+  }
 }
 ```
 
 #### avue-crud-api
+
 ```json
 {
   "avue-crud-api": {
@@ -1267,6 +1277,7 @@ node version: >= 18.15.0
 ### Element-UI
 
 #### el-button-danger(ebd)
+
 ```json
 "el-button-danger": {
   "prefix": "ebd",
@@ -1277,7 +1288,32 @@ node version: >= 18.15.0
 }
 ```
 
+#### el-button-success(ebs)
+
+```json
+"el-button-success": {
+  "prefix": "ebs",
+  "body": [
+    "<el-button type=\"success\">$1</el-button>"
+  ],
+  "description": ""
+}
+```
+
+#### el-button-warning(ebw)
+
+```json
+"el-button-warning": {
+  "prefix": "ebw",
+  "body": [
+    "<el-button type=\"warning\">$1</el-button>"
+  ],
+  "description": ""
+}
+```
+
 #### el-button-primary(ebp)
+
 ```json
 "el-button-primary": {
   "prefix": "ebp",
@@ -1288,7 +1324,20 @@ node version: >= 18.15.0
 }
 ```
 
+#### el-button-info(ebi)
+
+```json
+"el-button-info": {
+  "prefix": "ebi",
+  "body": [
+    "<el-button type=\"info\">$1</el-button>"
+  ],
+  "description": ""
+}
+```
+
 #### el-checkbox(ec)
+
 ```json
 "el-checkbox": {
   "prefix": "ec",
@@ -1300,6 +1349,7 @@ node version: >= 18.15.0
 ```
 
 #### el-confirm(ec)
+
 ```json
 "el-confirm": {
   "prefix": "ec",
@@ -1321,7 +1371,55 @@ node version: >= 18.15.0
 }
 ```
 
+#### el-confirm-cancel(ecc)
+
+```json
+"el-confirm-cancel": {
+  "prefix": "ecc",
+  "body": [
+    "this.$confirm(`是否审核通过?`, '提示', {",
+    "  confirmButtonText: '通过',",
+    "  cancelButtonText: '不通过',",
+    "  distinguishCancelAndClose: true,",
+    "  type: 'warning',",
+    "})",
+    "  .then(() => {",
+    "    approve({",
+    "      id: row.id,",
+    "      status: 1,",
+    "    }).then(res => {",
+    "      if (res.data.code == 200) {",
+    "        this.$message({",
+    "          type: 'success',",
+    "          message: `操作成功!`,",
+    "        });",
+    "        this.onLoad(this.page);",
+    "      }",
+    "    });",
+    "  })",
+    "  .catch((action) => {",
+    "    if (action === 'cancel') {",
+    "      approve({",
+    "        id: row.id,",
+    "        status: 2,",
+    "      }).then(res => {",
+    "        if (res.data.code == 200) {",
+    "          this.$message({",
+    "            type: 'success',",
+    "            message: `操作成功!`,",
+    "          });",
+    "          this.onLoad(this.page);",
+    "        }",
+    "      });",
+    "    }",
+    "  });"
+  ],
+  "description": ""
+},
+```
+
 #### el-date-picker(edp)
+
 ```json
 "el-date-picker": {
   "prefix": "edp",
@@ -1339,11 +1437,12 @@ node version: >= 18.15.0
 }
 ```
 
-#### el-descriptions(edesc)
+#### el-descriptions(ed)
+
 ```json
 {
   "el-descriptions": {
-    "prefix": "edesc",
+    "prefix": "ed",
     "body": [
       "<el-descriptions :column=\"1\">",
       "    <el-descriptions-item label=\"用户名\">kooriookami</el-descriptions-item>",
@@ -1352,12 +1451,13 @@ node version: >= 18.15.0
       "    <el-descriptions-item label=\"联系地址\">江苏省苏州市吴中区吴中大道 1188 号</el-descriptions-item>",
       "</el-descriptions>"
     ],
-    "description": ""
+    "description": "el-descriptions"
   }
 }
 ```
 
 #### el-dialog(ed)
+
 ```json
 {
   "el-dialog": {
@@ -1376,12 +1476,13 @@ node version: >= 18.15.0
       "  </span>",
       "</el-dialog>"
     ],
-    "description": ""
+    "description": "el-dialog"
   }
 }
 ```
 
 #### element-form-table-template(eftt)
+
 ```json
 {
   "element-form-table-template": {
@@ -1485,38 +1586,38 @@ node version: >= 18.15.0
 }
 ```
 
-#### handleCommonConfirm
+#### el-confirm-fn
+
 ```json
-{
-  "handleCommonConfirm": {
-    "prefix": "handleCommonConfirm",
-    "body": [
-      "handleCommonConfirm(operation, api, id) {",
-      "  this.$confirm(`是否确认${ operation || '' }?`, '提示', {",
-      "    confirmButtonText: '确定',",
-      "    cancelButtonText: '取消',",
-      "    type: 'warning'",
-      "  }).then(() => {",
-      "    api(id).then(res => {",
-      "      if (res.data.code === 200) {",
-      "        this.$message({",
-      "          type: 'success',",
-      "          message: `${operation || '操作'}成功!`",
-      "        });",
-      "        this.refreshChange()",
-      "      }",
-      "    })",
-      "  }).catch(() => {",
-      "  });",
-      "},",
-      "        "
-    ],
-    "description": "handleCommonConfirm"
-  }
+"el-confirm-fn": {
+  "prefix": "ecf",
+  "body": [
+    "handleConfirm(operation, api, id) {",
+    "  this.$confirm(`是否确认${ operation || '' }?`, '提示', {",
+    "    confirmButtonText: '确定',",
+    "    cancelButtonText: '取消',",
+    "    type: 'warning'",
+    "  }).then(() => {",
+    "    api(id).then(res => {",
+    "      if (res.data.code === 200) {",
+    "        this.$message({",
+    "          type: 'success',",
+    "          message: `${operation || '操作'}成功!`",
+    "        });",
+    "        this.refreshChange()",
+    "      }",
+    "    })",
+    "  }).catch(() => {",
+    "  });",
+    "},",
+    "        "
+  ],
+  "description": "el-handle-confirm-fn"
 }
 ```
 
 #### el-input(ei)
+
 ```json
 {
   "el-input": {
@@ -1529,50 +1630,66 @@ node version: >= 18.15.0
 }
 ```
 
-#### el-message(eme)
+#### el-message
+
 ```json
 {
   "el-message-error": {
     "prefix": "eme",
-    "body": [
-      "this.$$message.error('错了哦，这是一条错误消息')"
-    ],
+    "body": ["this.$$message.error('错了哦，这是一条错误消息')"],
     "description": ""
   },
   "el-message-warning": {
     "prefix": "emw",
-    "body": [
-      "this.$$message.warning('警告哦，这是一条警告消息')"
-    ],
+    "body": ["this.$$message.warning('警告哦，这是一条警告消息')"],
     "description": ""
   },
   "el-message-success": {
     "prefix": "ems",
-    "body": [
-      "this.$$message.success('操作成功！')"
-    ],
+    "body": ["this.$$message.success('操作成功！')"],
     "description": ""
   }
 }
 ```
 
 #### el-radio(er)
+
 ```json
 {
   "el-radio": {
     "prefix": "er",
+    "body": ["<el-radio v-model=\"radio\" label=\"1\">备选项</el-radio>"],
+    "description": ""
+  }
+}
+```
+
+#### el-select(es)
+
+```json
+{
+  "el-select": {
+    "prefix": "es",
     "body": [
-      "<el-radio v-model=\"radio\" label=\"1\">备选项</el-radio>"
+      "  <el-select v-model=\"value\" placeholder=\"请选择\">",
+      "    <el-option",
+      "      v-for=\"item in options\"",
+      "      :key=\"item.value\"",
+      "      :label=\"item.label\"",
+      "      :value=\"item.value\">",
+      "    </el-option>",
+      "  </el-select>"
     ],
     "description": ""
   }
 }
 ```
 
-#### el-select-options-data(eso)
+#### el-select-options(eso)
+
 ```json
 {
-  "el-select-options-data": {
+  "el-select-options": {
     "prefix": "eso",
     "body": [
       "options: [",
@@ -1595,27 +1712,8 @@ node version: >= 18.15.0
 }
 ```
 
-#### el-select(es)
-```json
-{
-  "el-select": {
-    "prefix": "es",
-    "body": [
-      "  <el-select v-model=\"value\" placeholder=\"请选择\">",
-      "    <el-option",
-      "      v-for=\"item in options\"",
-      "      :key=\"item.value\"",
-      "      :label=\"item.label\"",
-      "      :value=\"item.value\">",
-      "    </el-option>",
-      "  </el-select>"
-    ],
-    "description": ""
-  }
-}
-```
-
 #### el-validate(ev)
+
 ```json
 {
   "el-validate": {
@@ -1635,19 +1733,19 @@ node version: >= 18.15.0
 ### Vue
 
 #### bind-img-dynamic(dimg)
+
 ```json
 {
   "bind img dynamic": {
     "prefix": "dimg",
-    "body": [
-      "<img :src=\"require(`@/imgs/${$1}`)\" alt=\"\">"
-    ],
+    "body": ["<img :src=\"require(`@/imgs/${$1}`)\" alt=\"\">"],
     "description": "bind img dynamic"
   }
 }
 ```
 
 #### bind-background-style-dynamic(dbgs)
+
 ```json
 {
   "backgroundStyle": {
@@ -1667,6 +1765,7 @@ node version: >= 18.15.0
 ```
 
 #### vue-template(vue)
+
 ```json
 {
   "Print to console": {
@@ -1703,6 +1802,7 @@ node version: >= 18.15.0
 ```
 
 #### v-for in list(vfor)
+
 ```json
 {
   "v-for in list": {
