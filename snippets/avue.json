@@ -1,5 +1,5 @@
 {
-  "avue-crud-with-page": {
+  "avue-crud-page": {
     "prefix": "acp",
     "body": [
       "<template>",
@@ -165,7 +165,7 @@
     "description": "generate avue-crud-with-page template"
   },
   
-  "avue-form-crud-with-page": {
+  "avue-form-crud-page": {
     "prefix": "afcp",
     "body": [
       "<template>",
@@ -336,8 +336,8 @@
     "description": "generate avue-form-crud-with-page template"
   },
 
-  "avue-diy-edit-view": {
-    "prefix": "adev",
+  "avue-edit-page": {
+    "prefix": "aep",
     "body": [
       "<template>",
       "  <basic-container>",
@@ -821,7 +821,7 @@
     "description": "generate avue-attachment snippet"
   },
 
-  "avue-change-status-method": {
+  "avue-change-status": {
     "prefix": "acs",
     "body": [
       "changeStatus(row) {",
