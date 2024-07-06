@@ -1,14 +1,14 @@
 {
-  "bind img dynamic": {
-    "prefix": "dimg",
+  "bind-img": {
+    "prefix": "bi",
     "body": [
       "<img :src=\"require(`@/imgs/${$1}`)\" alt=\"\">"
     ],
     "description": "bind img dynamic"
   },
 
-  "backgroundStyle": {
-    "prefix": "dbgs",
+  "bind-background": {
+    "prefix": "bb",
     "body": [
       "backgroundStyle(imgUrl) {",
       "  return {",
@@ -52,8 +52,8 @@
     "description": "a vue options template"
   },
 
-  "v-for in list": {
-    "prefix": "vfor",
+  "v-for": {
+    "prefix": "vf",
     "body": [
       "<div v-for=\"(item, index) in list\"",
       "   :class=\"['list-item', currentIndex === index ? 'list-item-actived' : '']\"",
