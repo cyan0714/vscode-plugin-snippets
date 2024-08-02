@@ -1419,14 +1419,139 @@ export default {
 
 ### Szhn
 
-#### szhn-date-picker-datetime(sdpp)
+#### option(formItem)
+##### szhn-formItem-datetime(sfd)
+```js
+{
+  type: 'el-date-picker',
+  label: '调用时间',
+  prop: 'invoke',
+  elOptions: {
+    type: 'datetime',
+    prefixIcon: 'el-icon-time',
+    format: 'yyyy-MM-dd HH:mm',
+    valueFormat: 'yyyy-MM-dd HH:mm'
+  },
+},
+```
 
-#### szhn-date-picker-datetimerange(sdpp)
+##### szhn-formItem-datetimerange(sfd)
+```js 
+{
+  type: 'el-date-picker',
+  label: '发起时间',
+  elOptions: {
+    type: 'datetimerange',
+    rangeSeparator: '至',
+    startPlaceholder: '开始时间',
+    endPlaceholder: '结束时间',
+    prefixIcon: 'el-icon-time',
+    format: 'yyyy-MM-dd HH:mm',
+    valueFormat: 'yyyy-MM-dd HH:mm'
+  },
+  prop: 'taskTime'
+},
+```
 
-#### szhn-select(ss)
+##### szhn-formItem-select(sfs)
+```js 
+{
+  type: 'el-select',
+  label: '调用成功率',
+  prop: 'successRate',
+  subItems: [
+    {
+      subType: 'el-option',
+      value: '1',
+      label: '高于80%',
+      text: '高于80%'
+    },
+    {
+      subType: 'el-option',
+      value: '2',
+      label: '低于80%',
+      text: '低于80%'
+    },
+  ]
+},
+```
 
-#### szhn-radio-group(srg)
+##### szhn-formItem-radio(sfr)
+```js
+{
+  type: 'el-radio-group',
+  label: '是否开启根据调用AK进行分组',
+  prop: 'enableAceessKeyGroup',
+  defaultValue: true,
+  subItems: [
+    {
+      subType: 'el-radio',
+      prop: 'true',
+      label: true,
+      text: '是'
+    },
+    {
+      subType: 'el-radio',
+      prop: 'false',
+      label: false,
+      text: '否'
+    }
+  ]
+},
+```
 
-#### szhn-table-page(stp)
+##### szhn-formItem-input(sfi)
+```js
+{
+  type: 'el-input',
+  label: '应用场景名称',
+  prop: 'appsceneName',
+  span: 12,
+  required: true
+},
+```
 
-#### szhn-table-page-dialog(stpd)
+##### szhn-formItem-textarea(sft)
+```js
+{
+  type: 'el-input',
+  label: '申请依据',
+  prop: 'applyBasis',
+  span: 20,
+  required: true,
+  elOptions: {
+    type: 'textarea',
+    autosize: { minRows: 6, maxRows: 6 }
+  }
+},
+```
+
+##### szhn-formItem-slot(sfs)
+```js
+{
+  type: 'slot',
+  label: '上传文件',
+  prop: 'applyFileId',
+  span: 24,
+  slotName: 'files',
+  required: true
+}
+```
+
+#### option(tableColumn)
+##### szhn-tableColumn-slotRender(sts)
+```js
+{
+  prop: 'itemType',
+  label: '事项类型',
+  slotRender: ({ row }) => {
+    return store.state.mlDict.ITEM_SOURCE__MAP[row.itemType]
+  }
+},
+```
+
+#### 页面
+
+##### szhn-table-page(stp)
+
+##### szhn-table-page-dialog(stpd)
