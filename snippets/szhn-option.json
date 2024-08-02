@@ -1,6 +1,6 @@
 {
-  "szhn-date-picker-datetime": {
-    "prefix": "sdpd",
+  "szhn-formItem-datetime": {
+    "prefix": "sfd",
     "body": [
       "{",
       "  type: 'el-date-picker',",
@@ -14,11 +14,11 @@
       "  },",
       "},"
     ],
-    "description": "szhz-date-picker-datetime-config"
+    "description": "szhn-formItem-datetime"
   },
   
-  "szhn-date-picker-datetimerange": {
-    "prefix": "sdpd",
+  "szhn-formItem-datetimerange": {
+    "prefix": "sfd",
     "body": [
       "{",
       "  type: 'el-date-picker',",
@@ -35,11 +35,11 @@
       "  prop: 'taskTime'",
       "},"
     ],
-    "description": "szhn-date-picker-datetimerange-config"
+    "description": "szhn-formItem-datetimerange"
   },
 
-  "szhn-select": {
-    "prefix": "ss",
+  "szhn-formItem-select": {
+    "prefix": "sfs",
     "body": [
       "{",
       "  type: 'el-select',",
@@ -61,11 +61,11 @@
       "  ]",
       "},"
     ],
-    "description": "szhn-select-config"
+    "description": "szhn-formItem-select"
   },
 
-  "szhn-radio-group": {
-    "prefix": "srg",
+  "szhn-formItem-radio": {
+    "prefix": "sfr",
     "body": [
       "{",
       "  type: 'el-radio-group',",
@@ -88,6 +88,68 @@
       "  ]",
       "}"
     ],
-    "description": "szhn-radio-group-config"
+    "description": "szhn-formItem-radio"
+  },
+
+  "szhn-formItem-input": {
+    "prefix": "sfi",
+    "body": [
+      "{",
+      "  type: 'el-input',",
+      "  label: '应用场景名称',",
+      "  prop: 'appsceneName',",
+      "  span: 12,",
+      "  required: true",
+      "},"
+    ],
+    "description": "szhn-formItem-input"
+  },
+
+  "szhn-formItem-textarea": {
+    "prefix": "sft",
+    "body": [
+      "{",
+      "  type: 'el-input',",
+      "  label: '申请依据',",
+      "  prop: 'applyBasis',",
+      "  span: 20,",
+      "  required: true,",
+      "  elOptions: {",
+      "    type: 'textarea',",
+      "    autosize: { minRows: 6, maxRows: 6 }",
+      "  }",
+      "},"
+    ],
+    "description": "szhn-formItem-textarea"
+  },
+
+  "szhn-formItem-slot": {
+    "prefix": "sfs",
+    "body": [
+      "{",
+      "  type: 'slot',",
+      "  label: '上传文件',",
+      "  prop: 'applyFileId',",
+      "  span: 24,",
+      "  slotName: 'files',",
+      "  required: true",
+      "}"
+    ],
+    "description": "szhn-formItem-slot"
+  },
+
+
+  "szhn-tableColumn-slotRender": {
+    "prefix": "sts",
+    "body": [
+      "{",
+      "  prop: 'itemType',",
+      "  label: '事项类型',",
+      "  slotRender: ({ row }) => {",
+      "    return store.state.mlDict.ITEM_SOURCE__MAP[row.itemType]",
+      "  }",
+      "},"
+    ],
+    "description": "szhn-tableColumn-slotRender"
   }
 }
