@@ -7,6 +7,7 @@
     "vscode": "^1.84.0"
   },
   "scripts": {
+    "generate:snippets": "node generate-snippets-config.js",
     "pack": "vsce package"
   },
   "categories": [
@@ -15,77 +16,291 @@
   "contributes": {
     "snippets": [
       {
+        "language": "javascript",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/utils.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/css.json"
+      },
+      {
         "language": "css",
         "path": "./snippets/css.json"
       },
-
+      {
+        "language": "less",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/css.json"
+      },
       {
         "language": "javascript",
         "path": "./snippets/javascript.json"
       },
-
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/javascript.json"
+      },
       {
         "language": "html",
-        "path": "./snippets/vue.json"
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/javascript.json"
       },
       {
         "language": "javascript",
         "path": "./snippets/vue.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/vue.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/vue.json"
       },
-
       {
         "language": "html",
-        "path": "./snippets/avue.json"
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/vue.json"
       },
       {
         "language": "javascript",
         "path": "./snippets/avue.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/avue.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/avue.json"
       },
-
       {
         "language": "html",
-        "path": "./snippets/element-ui.json"
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/avue.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/avue.json"
       },
       {
         "language": "javascript",
         "path": "./snippets/element-ui.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/element-ui.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/element-ui.json"
       },
-
       {
         "language": "html",
-        "path": "./snippets/szhn-option.json"
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/element-ui.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/element-ui.json"
       },
       {
         "language": "javascript",
         "path": "./snippets/szhn-option.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/szhn-option.json"
       },
-
+      {
+        "language": "html",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/szhn-option.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/szhn-page.json"
+      },
       {
         "language": "html",
         "path": "./snippets/szhn-page.json"
       },
       {
-        "language": "javascript",
+        "language": "json",
         "path": "./snippets/szhn-page.json"
       },
       {
-        "language": "vue",
+        "language": "css",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/szhn-page.json"
+      },
+      {
+        "language": "sass",
         "path": "./snippets/szhn-page.json"
       }
     ]
