@@ -1,0 +1,19 @@
+{
+  "uniqBy": {
+    "prefix": "uniqBy",
+    "body": [
+      "const uniqBy = function(array, key) {",
+      "  const seen = new Map();",
+      "  return array.filter(item => {",
+      "    const keyValue = typeof key === 'function' ? key(item) : item[key];",
+      "    if (!seen.has(keyValue)) {",
+      "      seen.set(keyValue, true);",
+      "      return true;",
+      "    }",
+      "    return false;",
+      "  });",
+      "}"
+    ],
+    "description": "simulate like lodash's uniqBy"
+  }
+}
